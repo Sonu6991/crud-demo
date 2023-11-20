@@ -6,6 +6,7 @@ const router: any = express.Router();
 /** @used */
 router.post("/", CategoryController.create);
 router.put("/:id", CategoryController.update);
+router.delete("/:id", CategoryController.delete);
 router.get("/", CategoryController.getAll);
 
 export default router;

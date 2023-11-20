@@ -33,7 +33,6 @@ export const checkCollectionExists = (collectionName: string) => {
 };
 
 export const handleUnMatchedRoute = (routeList: any) => {
-  console.log("routeList", routeList);
   return (req: any, res: any, next: any) => {
     let allURLs: Array<string> = _.flatten(Object.values(routeList));
     /** pre added for rpm  */
